@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MY FIRST WEB PAGE
+        </title>
+        
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "css/styles.css" />
+    </head>
+    <body>
+        <div id = "container" class = "container">
+            <div id = "nav">
+                <a href = "index.html" target = "_blank">Home</a> |
+                <a href = "about.html" target = "_blank">About</a> |
+                <a href = "contact.html" target = "_blank">Contact Us</a>
+            </div>
+            <div id = "content">
+                <h1 id = "title" class = "display-1">This is the title</h1>
+                <h1>Hello World</h1>
+                <h2>Hello World</h2>
+                <h3>Hello World</h3>
+                <h4>Hello World</h4>
+                <h5>Hello World</h5>
+                <h6>Hello World</h6>
+                <p>This is my first web page</p>
+                <p class = "information">This is the other p tag 1</p>
+                <p >This is the other p tag 2</p>
+                <p class = "information">This is the other p tag 3</p>
+                <p id = "targetTag">This is the other p tag 4</p>
+                <p class = "information">This is the other p tag 5</p>
+
+                <a id="link1" href = "https://www.amazon.com" target="_blank">Amazon</a>
+
+                <button type = "button" class = "btn btn-primary" onclick="ClickedButton()">Click Me!</button>
+                <button type = "button" class = "btn btn-danger" onclick="ClickedButtonToChangeText()">Click Me To Change Text!</button>
+                <button type = "button" id = "hideTitleBtn" class = "btn btn-success">Click Me To Hide Title!</button>
+            </div>
+            <div id = "footer">
+                This is the footer
+            </div>
+        </div>
+                <!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+                <!-- JavaScript Bundle with Popper -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+                <script src = "js/jquery.js"></script>
+                <script src = "js/script.js"></script>
+
+                <script>
+                    $(function(){
+                        $('#hideTitleBtn').click(function(){
+                            $('#title').toggle();
+                            // $('#title').addClass('subTitle');
+                            $('p').text("This is Jquery Text");
+                            $('.information').text("This is Information");
+                        });
+                    });
+                </script>
+    </body>
+</html>
